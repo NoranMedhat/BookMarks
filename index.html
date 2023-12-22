@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./asset/images/icons8-bookmark.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/mainStayle.css">
+    <link rel="stylesheet" href="./asset/css/Media.css">
+</head>
+<body class="back-ground vh-100">
+    <div class="container  ">
+    <div class=" m-2 title">
+        <h1 class="text-center">BookMarker</h1>
+    <h2 class="text-center m-4"><span class="icon-bookmark"></span>
+        Bookmark your Favorite Sites 
+        <span class="icon-bookmark"></span>
+    </h2>
+
+    </div>
+    <form class="formPart py-1 d" >
+        <label for="siteName" class="form-label fw-bolder m-2"><span class="icon-bookmark1 "></span> Site Name</label>
+        <input type="text" class="form-control "  id="siteName">
+        <label for="siteUrl" class="form-label fw-bolder m-2"><span class="icon-link"></span> Site URL</label>
+        <input type="text" class="form-control" id="siteUrl">
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-success m-4 fw-bolder px-5 py-2 " id="submit">Submit</button>
+        </div>    
+        </form>
+    <table class="table mt-2 text-center">
+        <thead>
+            <th>Index</th>
+            <th>WebSite Name</th>
+            <th>Visit</th>
+            <th>Delet</th>
+        </thead>
+        <tbody id="table"> 
+        </tbody>
+        <div>
+            <div class="modal " id="modal"  >
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="circles-groub">
+                            <div class="spinner-grow" role="status">
+                                <span class="visually-hidden"></span>
+                            </div>
+                            <div class="spinner-grow" role="status">
+                                <span class="visually-hidden"></span>
+                            </div>
+                            <div class="spinner-grow" role="status">
+                                <span class="visually-hidden"></span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" onclick="closeModal()" id="close" ></button>
+                    </div>
+                    <div class="modal-body fw-bolder">
+                    <p>Site Name or Url is not valid, Please follow the rules below :</p>
+                    </div>
+                    <div class="modal-footer footer d-flex justify-content-start ">
+                    <p><i class="icon-arrow-outline-right"></i>Site name must contain at least 3 characters.</p>
+                    <p><i class="icon-arrow-outline-right"></i> Site URL must be a valid one. </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </table>
+    </div>
+
+
+<script src="./asset/js/bootstrap.bundle.min.js"></script> 
+<script src="./asset/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@media (max-width: 992px){
+    h1::after{
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transform: translateX(115%);
+        z-index: -1;
+        background-color:rgba(217, 250, 33, 0.495) ;
+        width: 30%;
+        height: 20px;
+        -webkit-transform: translateX(115%);
+        -moz-transform: translateX(115%);
+        -ms-transform: translateX(115%);
+        -o-transform: translateX(115%);
+}
+}
